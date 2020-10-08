@@ -81,7 +81,7 @@ fedex.rates({
   }
 }, function(err, res) {
   if(err) {
-    return console.log(err);
+    return console.error(err);
   }
 
   console.log(res);
@@ -99,7 +99,7 @@ fedex.track({
   }
 }, function(err, res) {
   if(err) {
-    return console.log(err);
+    return console.error(err);
   }
 
   console.log(res);
@@ -179,7 +179,7 @@ fedex.ship({
   }
 }, function(err, res) {
   if(err) {
-    return console.log(util.inspect(err, {depth: null}));
+    return console.error(util.inspect(err, {depth: null}));
   }
 
   console.log(util.inspect(res, {depth: null}));
@@ -192,7 +192,7 @@ fedex.freight_rates({
 
 }, function(err, res) {
   if(err) {
-    return console.log(err);
+    return console.error(err);
   }
 
   console.log(res);

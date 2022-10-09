@@ -1,7 +1,10 @@
 var fedexAPI = require('../lib/index');
 var util = require('util');
+
+// import fs module in fs module of nodejs
 var fs = require('fs');
 
+// FedexApi start 
 var fedex = new fedexAPI({
   environment: 'sandbox', // or live
   debug: true,
